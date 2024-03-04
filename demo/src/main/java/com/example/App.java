@@ -59,9 +59,18 @@ public class App {
         print(class2);
         // create the resulting classes joined together
         classResult = new String[n];
-        /*
-         * STUDENTS NEED TO ADD CODE HERE TO EFFICIENTLY JOIN THE CLASSROOMS
-         */
+        int i = 0, j = 0, k = 0;
+        while (i < class1.length) {
+            classResult[k] = class1[i];
+            i++;
+            k++;
+        }
+        while (j < class2.length) {
+            classResult[k] = class2[j];
+            j++;
+            k++;
+        }
+        Arrays.sort(classResult);
         // print the classes joined together
         System.out.println();
         System.out.printf("-------- result class: %d students --------\n", n);
